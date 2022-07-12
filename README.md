@@ -11,12 +11,14 @@ docker-compose up -d
 If docker is not your thing, you can go into the **/frontend** folder and type:
 
 ```
+npm i
 npm run dev
 ```
 
 And then go into the **/backend** folder and type:
 
 ```
+npm i
 npm run start:dev
 ```
 
