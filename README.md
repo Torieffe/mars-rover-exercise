@@ -2,7 +2,7 @@
 
 Live version: https://lucatorriani.it/mars-rover
 
-To quickly spin up the project you can use the docker-compose.yml file included in the project like so:
+To quickly spin up the project you can use the included **docker-compose.yml** file like so:
 
 ```
 docker-compose up -d
