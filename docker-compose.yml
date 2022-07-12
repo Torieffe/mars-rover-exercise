@@ -1,0 +1,24 @@
+version: "2"
+
+services:
+    frontend:
+        container_name: rover-nuxt
+        image: node:16.15.1
+        command: bash -c "npm i && npm run dev"
+        volumes:
+            - ./frontend:/usr/src/app
+        working_dir: /usr/src/app
+        ports:
+            - "3000:3000"
+        environment:
+            HOST: 0.0.0.0
+
+    backend:
+        container_name: rover-nest
+        image: node:16.15.1
+        command: bash -c "npm i && npm run start:dev"
+        volumes:
+            - ./backend:/usr/src/app
+        working_dir: /usr/src/app
+        ports:
+            - "3001:3001"
